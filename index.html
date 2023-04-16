@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Web Storage</title>
+</head>
+
+<body>
+    <form class="form">
+        <br>
+        <label class="label" for="namaDepan">Nama Depan:</label>
+        <input type="text" id="namaDepan" required>
+        <br>
+        <label class="label" for="namaBelakang">Nama Belakang:</label>
+        <input type="text" id="namaBelakang" required>
+        <br>
+        <label class="label" for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="">Pilih Gender</option>
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+        <br>
+        <label class="label" for="alamat">Alamat:</label>
+        <textarea id="alamat" required></textarea>
+        <br>
+        <label class="label" for="penyimpanan">Type Penyimpanan :</label>
+        <select id="penyimpanan">
+            <option value="session">Session Storage</option>
+            <option value="local">Local Storage</option>
+            <option value="cookie">Cookie Storage</option>
+        </select>
+        <br>
+        <button id="databaru" type="button">Data Baru</button><br>
+        <button id="datalama" type="button">Data Lama dan Baru</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
