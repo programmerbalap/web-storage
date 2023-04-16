@@ -1,1 +1,39 @@
 # web-storage
+
+- Pertama buat form inputan berupa nama depan, nama belakang, gender, alamat pada file html
+- Membuat opsi type penyimpanan webstorage (session-storage, local-storage, cookie-storage)
+- membuat fungsi getData pada file javascript untuk menangkap semua data inputan user
+- ambil value pada tiap tiap inputan menggunakan DOM kemudian disimpan pada variable
+- Cek tiap tiap variable apakah sudah terisi semua
+- Jika terisi maka kembalikan semua nilai dari inputan dalam bentuk objek
+- Jika tidak maka kembalikan nilai false
+- Buat variable data array yang nanti akan menampung data yang setiap kali diinputkanPar
+- Buat fungsi pushData yang menerima parameter item
+- ambil parameter item kemudian push ke dalam variable data tadi
+- ambil variable data kemudian konversi ke string kemudian di set pada web storage sesuai yang dipilih (session storage, local storage, cookie storage)
+- buat fungsi delete data, kemudian hapus semua data yang ada di variable data menggunakan splice.
+- set lagi web storage dengan data yang sudah dihapus tadi sehiggan juga menjadi kosong
+- buat fungsi untuk menampilkan data
+- ambil id result menggunakan DOM sebaagai tempat untuk menempatkan data yang akan ditampilkan nanti
+- ambil data dari web storage sesuai dengan tempat dimana data tadi disimpan
+- konversi data yang diambil kedalm objek json
+- lakukan perulangan forech untuk menampilkan data yang tadi diambil
+- Buat element html menggunakan createElement, kemudian berikan didalannya nilai yang akan ditampilkan
+- Letakkan element yang dibuat pada result tadi
+- ambil button dengan id databaru kemudian buat eventlistener
+- jika di klik jalankan fungsinya
+- ambil id penyimpanan kemudian ambil valuenya sebagai opsi penyimpanan 
+- kemudian di cek penyimpanan jika sama dengan local maka jalankan fungsi deleteData supaya data lamanya dihapus dulu
+- kemudian cek fungsi getData() yang tadi mengembalikan data, jika ada datanya maka ambil kemudian jalankan fungsi pushData() sambil beri argument getData()
+- setelah itu jalankan fungsi tampil data.
+- kemudian jika value penyimpanan sama dengan session majalankan fungsi fungsi untuk yang session storage
+- kemudian begitu juga sama dengan cookie
+- Selanjtnya untuk button data lama dan data baru
+- ambil id datalama kemudian beri even ketika di klik maka jalankan fungsinya
+- ambil value penyimpanan
+- cek penyimpanan jika sesusi dengan pilihan yang yang dipilih 
+- maka cek fungsi getData apakah ada nilainya 
+- jika ada maka push getData ke fungsi pushData 
+- jalankan fungsi tampil data
+- begitu juga untuk opsi penyimmpanan yang lain
+- 
